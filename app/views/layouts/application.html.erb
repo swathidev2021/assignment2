@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+    }
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
